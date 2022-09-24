@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandala's Point</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!--google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--CSS Bootstrap-->
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" 
+    crossorigin="anonymous">
+    <!--Javascript bootstrap -->
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+     crossorigin="anonymous"></script>
+    <!-- css do projeto -->
+    <link 
+    rel="stylesheet"
+     href="_css/styles.css"/>
+     <!--bootstrap icons-->
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+        >
+   />
+   <!--Seu css-->
+   <link rel="stylesheet" href="_css/style.css">
+</head>
+<body>
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+        <div class="container py-2">
+            <a href="#" 
+            class="navbar-brand primary-color">
+            <img src="img/m-icon.png" alt="Mandala's Point">
+            <span>Mandala's Point</span>
+            </a>
+            <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-items"
+            aria-controls="navbar-items"
+            aria-expanded="false"
+            aria-label="Toggle Navigation">
+            <i class="bi bi-list"></i>
+            </button>
+        <div class="collapse navbar-collapse" id="navbar-items">
+            <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link">Products</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    <div class="container bg-primary-color">
+        <!--Sliders-->
+        <section class="carousel slide mt-4 m-0" id="slider" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button 
+                    type="button"
+                    class="active" 
+                    data-bs-target="#slider"
+                    data-bs-slide-to="0"
+                    aria-current="true"
+                    aria-label="Slide 1">
+                </button>
+                <button 
+                type="button"
+                class="active" 
+                data-bs-target="#slider"
+                data-bs-slide-to="1"
+                aria-label="Slide 2">
+                </button>
+                <button 
+                type="button"
+                class="active" 
+                data-bs-target="#slider"
+                data-bs-slide-to="2"
+                aria-label="Slide 3">
+                </button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/mandala01.png" alt="Primeira Mandala" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Em Destaque</h5>
+                        <a href="#" class="btn btn-dark">Ver Produto</a>
+                    </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/mandala02.jpg" alt="Olho Grego" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h5>Em Destaque</h5>
+                    <a href="#" class="btn btn-dark">Ver Produto</a>
+                </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/mandala03.jpg" alt="Prosperidade" class="d-block w-100">
+            <div class="carousel-caption">
+                <h5>Em Destaque</h5>
+                <a href="#" class="btn btn-dark">Ver Produto</a>
+             </div>
+            </div>
+         </div>
+         <button 
+         class="carousel-control-prev" 
+         type="button" 
+         data-bs-slide="prev" 
+         data-bs-target="#slider"><i class="bi bi-arrow-left"><span class="visually-hidden">Previous</span></i>
+         </button>
+         <button 
+         class="carousel-control-next" 
+         type="button" 
+         data-bs-slide="next" 
+         data-bs-target="#slider"><i class="bi bi-arrow-right"><span class="visually-hidden">Previous</span></i>
+         </button>
+        </section>
+    </div>
+        <!--cards de preço-->
+        <header class="container" id="cards">
+        <div class="pricing-header col-5 p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 col-12 fw-normal pb-3">Preços</h1><i class="bi bi-cash-coin"></i>
+            <p class="fs-5 text-muted">Confira 3 formas diferentes de pedir a sua mandala personalizada</p>
+        </div>
+    </header>
+    <div class="container"><div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-md">
+                <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Básica</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">R$100</h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Mandala padrão</li>
+                        <li>Em estoque</li>
+                        <li>Preço mais baixo</li>
+                    </ul>
+                    <button class="w-100 btn btn-light btn-outline-dark">Compre Agora</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-md">
+                <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Personalizada</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">R$350</h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Mandala em paleta de cores</li>
+                        <li>Pronta em 2 semanas</li>
+                        <li>Entrega rápida</li>
+                    </ul>
+                    <button class="w-100 btn btn-light btn-outline-dark">Compre Agora</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4 shadow-ms border-danger">
+                <div class="card-header py-3 bg-danger text-bg-primary">
+                    <h4 class="my-0 fw-normal">Única</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">R$750</h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Mandala descritiva</li>
+                        <li>Pronta em meses</li>
+                        <li>Entrega relâmpago</li>
+                        <li>Totalmente única</li>
+                    </ul>
+                    <button class="w-100 btn btn-light btn-outline-danger">Faça seu pedido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <!--Infos adicionais-->
+
+        
+    <article class="container" id="info-container">
+        <div class="col-12">
+            <h2 class="title primary-color">Significado sobre as Mandalas</h2>
+            <p class="subtitle text-muted">Saiba mais sobre o significado de nossas mandalas</p>
+        </div>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12 rounded-3 col-md-5" id="info-banner">
+                    <img src="img/banner.jpg" 
+                    alt="Mandala Banner" 
+                    class="img-fluid"/>
+                </div>
+                <div class="col-12 col-md-7 rounded-3 bg-secondary-color" id="info-content">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="title py-2 mx-5 primary-color">Significado de uma Mandala</h2>
+                                <p class="mx-5 secondary-color">
+                                    Uma mandala é uma representação geométrica da dinâmica relação entre o homem e o cosmo. Refere-se a uma figura geométrica em que o círculo está circunscrito em um quadro ou o quadrado em um círculo. 
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="container" id="info-container2">
+        <div class="col-12">
+            <h2 class="title primary-color">Produção das Mandalas</h2>
+            <p class="subtitle text-muted">Saiba mais a produção de nossas mandalas</p>
+        </div>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12 rounded-3 col-md-5" id="info-banner2">
+                    <img src="img/banner02.jpg" 
+                    alt="Mandala Banner" 
+                    class="img-fluid"/>
+                </div>
+                <div class="col-12 col-md-7 rounded-3 bg-secondary-color" id="info-content2">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="title py-2 mx-5 primary-color">Produção de uma Mandala</h2>
+                                <p class="mx-5 secondary-color">
+                                    É formada por círculos e quadrados com um centro comum – concêntricos e formam uma imagem simbólica. O desenho básico pode ser sempre o mesmo, mas as cores e a variação do desenho poderá tornar cada mandala com seu próprio estilo. Essa figura possui ainda subdivisões, mais ou menos regulares, dividida por quatro ou múltiplos de quatro.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!--Footer-->
+    <footer class="container-fluid bg-dark-color" id="footer">
+        <div class="cointainer">
+            <div class="row">
+                <div class="col-12" id="footer-top">
+                    <div class="row justify-content-between">
+                        <div class="col-4"><a href="#" 
+                            class="navbar-brand primary-color">
+                            <img src="img/m-icon.png" alt="Mandala's Point">
+                            <span>Mandala's Point</span>
+                            </a>
+                        </div>
+                        <div class="col-4" id="social-icons">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-youtube"></i>
+                            <i class="bi bi-twitter"></i>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

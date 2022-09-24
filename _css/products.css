@@ -1,0 +1,163 @@
+* {
+    font-family: 'Lato',sans-serif;
+}
+
+.bg-primary-color{
+    background-color: white;
+}
+
+.bg-secondary-color{
+    background-color: #bebebe56;
+}
+
+.bg-dark-color{
+    background-color: #050505;
+}
+
+.primary-color {
+    color: #050505;
+}
+
+.secondary-color{
+    color: #444444;
+}
+
+main{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+/*Navbar */ 
+
+#navbar{
+    border-bottom: 1px solid #7a7a7a;
+}
+
+#navbar a:hover{
+    color: #000000;
+}
+
+#navbar a.active{
+    border-bottom: 1px solid #050505;
+}
+#navbar a.active:hover{
+    color: #7a7a7a;
+    border-bottom: 1px solid #050505;
+}
+.navbar-brand img{
+    width: 100px;
+}
+.navbar-brand span{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-left: .5em;
+}
+
+#navbar-items .navbar-nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#navbar-items .nav-item{
+    margin: 0 1em;
+}
+
+/*cards header*/ 
+#cards-header{
+    width: 100%;
+    margin-top: 10em;
+}
+
+#cards-header .subtitle{
+    border-bottom: 1px black solid;
+}
+#cards-header i{
+    margin-left: 0.3em;
+    font-size: 1.1em;
+    border-bottom: 1px #7a7a7a solid;
+}
+
+/*cards*/
+
+#product-container{
+    margin-bottom: 2em;
+    border-bottom: 1px black solid;
+}
+
+.card{
+    border-radius: 0;
+    position: relative;
+}
+
+.card-title{
+    font-weight: bold;
+    text-align: left;
+}
+
+.card .pricing-card-title{
+    display: block;
+}
+
+
+#featured-images .col-md-3{
+    cursor: pointer;
+    position: relative;
+    opacity: 1;
+}
+#featured-images .col-md-3 img{
+    transition: 0.2s;
+}
+
+#featured-images .col-md-3:hover > img{
+    border: #000000 1px solid;
+    margin-bottom: 2em;
+    transform: scale(1.1);
+}
+
+
+/*footer*/
+
+#footer-top .navbar-brand{
+    font-family: 'Lato',sans-serif;
+    padding: 0.6em;
+    color: white;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+#footer-top .navbar-brand:hover{
+    color: #7a7a7a;
+}
+#footer-top .navbar-brand img{
+    width: 20%;
+    filter: invert(1);
+}
+#social-icons i{
+    cursor: pointer;
+    font-size: 2em;
+    color: white;
+    padding-top: 0.6em;
+    margin-top: 1.5em;
+    padding-right: 2em;
+    vertical-align: middle;
+}
+
+#social-icons i:hover{
+    color: #7a7a7a;
+}
+
+/*second navbar*/ 
+
+#navbar-second-items .nav-link{
+    font-size: 2em;
+    color: #7a7a7a;
+    margin-bottom: 1em;
+}
+
+#navbar-second-items a.active{
+    border-bottom: 1px black solid;
+}
+
+#navbar-second-items .nav-link:hover{
+    color: #000000;
+}

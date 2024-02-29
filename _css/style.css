@@ -1,5 +1,5 @@
 * {
-    font-family: 'Lato',sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .bg-primary-color{
@@ -22,32 +22,82 @@
     color: #444444;
 }
 
+.btn-primary {
+    background-color: #525CEB;
+}
+
+.btn-primary:hover {
+    background-color: #4048b9;
+}
+
 
 /*Navbar */ 
 
 #navbar{
     border-bottom: 1px solid #7a7a7a;
+    background-color: #525CEB;
 }
 
-#navbar a:hover{
-    color: #000000;
+#navbar a {
+    color: #F8EDFF;
+
+}
+#navbar a:hover {
+    color: #d8dfe4;
 }
 
 #navbar a.active{
-    border-bottom: 1px solid #050505;
+    border-bottom: 1px solid #F8EDFF;
 }
 #navbar a.active:hover{
-    color: #7a7a7a;
-    border-bottom: 1px solid #050505;
+    color: #d8dfe4;
 }
+
+.navbar-brand h1:hover {
+    color: #F8EDFF;
+}
+
 .navbar-brand img{
     width: 100px;
+}
+.bi.bi-search {
+    color: #F8EDFF;
 }
 .navbar-brand span{
     font-size: 1.5em;
     font-weight: 700;
     margin-left: .5em;
 }
+
+.search-button {
+    button.show {
+        border: none;
+    }
+
+    form {
+        button {
+            border-radius: 8px !important;
+        }
+    }
+}
+
+@media(max-width:768px){
+    .search-button {
+        form {
+            width: 100% !important;
+            background: transparent;
+            border: none;
+
+            button {
+                background-color: #3D3B40 ;
+                border-radius: 8px !important;
+                color: white;
+            }
+        }
+    }
+}
+
+
 
 #navbar-items .navbar-nav{
     display: flex;
@@ -62,7 +112,7 @@
 /*sliders*/
 #slider {
     width: 100%;
-    margin-top: 8.8em;
+    margin-top: 7em;
     margin-bottom: 1em;
     display: flex;
 }
@@ -87,10 +137,17 @@
     border-radius: 0px !important;
 }
 
+.card-title {
+    margin: 0;
+}
 #slider .btn{
     padding: 0.3 0.8em;
     font-size: 1.2em;
     margin-top: 1em;
+}
+
+.dropdown-menu {
+    width: 15rem !important;
 }
 
 .carousel-control-prev i,
@@ -100,12 +157,10 @@
 }
 
 @media(min-width:768px){
-    .container{
-        width: 60%;
-    }
     #slider .carousel-caption h5{
-        font-size: 5.5em;
-        text-shadow: #000 2px 2px;
+        text-align: center;
+        font-size: 3.5em;
+        text-shadow: black 2px 2px;
     }
     #slider .carousel-caption{
         bottom: 5em;
@@ -114,6 +169,7 @@
         padding: 0.3 0.8em;
         font-size: 2em;
         margin-top: 1em;
+        border-radius: 8px !important;
     }
 
 
@@ -124,6 +180,7 @@
 /*cards*/
 
 .pricing-header h1{
+    padding-bottom: 1px;
     border-bottom: 1px solid black;
 }
 
@@ -169,14 +226,30 @@
 }
 
 .img-fluid{
-    border-radius: 10px;
+    border-radius: 0;
     margin-bottom: 2em;
     transition: 0.5s;
-    
+    height: 100%;
+    width: 100%;
 }
-.img-fluid:hover{
-    transform: scale(1.2);
-    border: #000 1px solid;
+.card-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-inline-end: 10px;
+}
+.card-tags {
+    display: flex;
+    gap: 15px;
+    justify-content: start;
+
+    .tag {
+        font-style: italic;
+        background: #525CEB;
+        color: white;
+        padding: 5px;
+        border-radius: 8px;
+    }
 }
 
 #info-container2{
@@ -185,6 +258,10 @@
 }
 
 /*footer*/
+
+#footer {
+    background-color: #525CEB;
+}
 
 #footer-top .navbar-brand{
     font-family: 'Lato',sans-serif;

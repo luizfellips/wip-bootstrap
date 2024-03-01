@@ -63,6 +63,18 @@ body {
     color: #d8dfe4;
 }
 
+@media(max-width:768px){
+    .mobile-caption {
+        font-size: 10px;
+
+        bottom: 3em !important;
+    
+    h5 {
+        margin: 0;
+    }
+    }
+}
+
 .navbar-brand h1:hover {
     color: #F8EDFF;
 }
@@ -113,6 +125,20 @@ body {
     }
 }
 
+.card {
+    max-height: 185px;
+    max-width: 465px;
+
+    .card-title {
+        display: -webkit-box;
+        max-width: 465px; /* Set your desired width */
+        -webkit-line-clamp: 2; /* Limit to 2 lines */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+}
 
 
 #navbar-items .navbar-nav{

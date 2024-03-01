@@ -125,20 +125,24 @@ body {
     }
 }
 
-.card {
-    max-height: 185px;
-    max-width: 465px;
-
-    .card-title {
-        display: -webkit-box;
-        max-width: 465px; /* Set your desired width */
-        -webkit-line-clamp: 2; /* Limit to 2 lines */
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-
+@media(min-width:768px){
+    .card {
+        max-height: 185px;
+        max-width: 465px;
+    
+        .card-title {
+            display: -webkit-box;
+            max-width: 465px; /* Set your desired width */
+            -webkit-line-clamp: 2; /* Limit to 2 lines */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+    
+        }
     }
+    
 }
+
 
 
 #navbar-items .navbar-nav{

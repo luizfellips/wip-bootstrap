@@ -34,16 +34,25 @@ body {
 
     #calendario {
         width: 100%;
+        border-collapse: inherit;
+        border-spacing: 0 10px;
+
+        tr {
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+        }
+
         th,
         td {
             padding: 25px;
-            border-radius: 999px;
+            border-radius: 55px;
         }
 
         .active {
             background-color: #525CEB;
             color: #fff; 
-            font-weight: bold; 
+            font-weight: bold;
+            margin-bottom: 15px !important;
         }
     }
 

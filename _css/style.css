@@ -62,17 +62,6 @@ body {
     color: #d8dfe4;
 }
 
-@media (max-width: 768px) {
-    .mobile-caption {
-        font-size: 10px;
-
-        bottom: 3em !important;
-
-        h5 {
-            margin: 0;
-        }
-    }
-}
 
 @media (max-width: 991px) {
     .mobile-caption {
@@ -86,6 +75,30 @@ body {
 
         p {
             display: none !important;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-caption {
+        font-size: 10px;
+
+        bottom: 3em !important;
+
+        h5 {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 335px) {
+    .mobile-caption {
+
+        bottom: 2em !important;
+
+        h5 {
+            font-size: 2em !important;
+            margin: 0;
         }
     }
 }
@@ -159,9 +172,24 @@ body {
 @media (max-width: 475px) {
     .col-xs {
         .card-tags {
+            flex-direction: row;
+            align-items: flex-start;
+            font-size: 10px;
+
+            gap: 8px;
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    .col-xs {
+        .card-tags {
             flex-direction: column;
             align-items: flex-start;
-            font-size: 14px;
+            font-size: 12px;
+
+            gap: 8px;
+            margin-bottom: 15px;
         }
     }
 }
@@ -269,6 +297,7 @@ body {
         font-size: 3em;
     }
 }
+
 /*cards*/
 
 .pricing-header h1 {

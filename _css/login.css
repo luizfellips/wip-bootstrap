@@ -30,10 +30,16 @@ body {
     }
 }
 
-.login-form h2 {
-    margin-bottom: 20px;
-    color: #333;
-    user-select: none;
+.login-form .Link {
+    margin: 15px;
+    
+    a {
+        text-decoration: none;
+        color: #333;
+        user-select: none;
+        font-size: 30px;
+    }
+    
 }
 
 .form-group {
